@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/main">
+
+    <fragment
+        android:id="@+id/main"
+        android:name="com.shopper.MainContentFragment"
+        android:label="@string/Main"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/shopping_lists">
+        <action
+            android:id="@+id/action_main_to_listsView"
+            app:destination="@id/lists" />
+    </fragment>
+    <fragment
+        android:id="@+id/lists"
+        android:name="com.shopper.ListsFragment"
+        android:label="@string/Lists"
+        app:navGraph="@navigation/nav_graph"
+        tools:layout="@layout/active_list">
+        <action
+            android:id="@+id/action_listsView_to_main"
+            app:destination="@id/main" />
+    </fragment>
+</navigation>
