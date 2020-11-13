@@ -10,7 +10,7 @@
         android:name="com.shopper.MainContentFragment"
         android:label="@string/Main"
         app:navGraph="@navigation/nav_graph"
-        tools:layout="@layout/shopping_lists">
+        tools:layout="@layout/main_menu">
         <action
             android:id="@+id/action_main_to_listsView"
             app:destination="@id/lists" />
@@ -20,7 +20,7 @@
         android:name="com.shopper.ListsFragment"
         android:label="@string/Lists"
         app:navGraph="@navigation/nav_graph"
-        tools:layout="@layout/active_list">
+        tools:layout="@layout/shopping_lists">
         <action
             android:id="@+id/action_listsView_to_main"
             app:destination="@id/main" />
