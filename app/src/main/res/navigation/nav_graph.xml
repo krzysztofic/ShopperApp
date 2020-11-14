@@ -7,17 +7,17 @@
 
     <fragment
         android:id="@+id/main"
-        android:name="com.shopper.MainContentFragment"
+        android:name="com.shopper.Fragments.MainContentFragment"
         android:label="@string/Main"
         app:navGraph="@navigation/nav_graph"
         tools:layout="@layout/main_menu">
         <action
             android:id="@+id/action_main_to_listsView"
-            app:destination="@id/lists" />
+            app:destination="@id/listsView" />
     </fragment>
     <fragment
-        android:id="@+id/lists"
-        android:name="com.shopper.ListsFragment"
+        android:id="@+id/listsView"
+        android:name="com.shopper.Fragments.ListsFragment"
         android:label="@string/Lists"
         app:navGraph="@navigation/nav_graph"
         tools:layout="@layout/shopping_lists">

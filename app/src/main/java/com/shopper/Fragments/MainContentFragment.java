@@ -1,4 +1,4 @@
-package com.shopper;
+package com.shopper.Fragments;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+
+import com.shopper.R;
 
 public class MainContentFragment extends Fragment {
 

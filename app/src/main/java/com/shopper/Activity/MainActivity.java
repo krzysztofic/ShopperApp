@@ -1,8 +1,10 @@
-package com.shopper;
+package com.shopper.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.shopper.R;
 
 public class MainActivity extends AppCompatActivity {
 
